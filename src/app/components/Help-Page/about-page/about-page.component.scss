@@ -1,0 +1,59 @@
+.about-content {
+  position: relative;
+  height: 100;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 50px;
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: monospace;
+      animation-name: ani;
+      background: linear-gradient(
+        to right,
+        #c230c5 10%,
+        #6ba5e2 50%,
+        black 60%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: ani 3s linear infinite;
+      display: inline-block;
+    }
+  }
+
+  .slideshow-pics {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-top: 40%;
+      width: 23%;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      margin-top: 90%;
+      width: 250px;
+    }
+  }
+}
+@keyframes ani {
+  to {
+    background-position: 200%;
+  }
+}

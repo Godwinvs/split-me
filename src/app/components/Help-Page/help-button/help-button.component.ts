@@ -8,7 +8,7 @@ import { HelpDialogComponent } from '../help-dialog/help-dialog.component';
   styles: [
     `
       .help-button {
-        background: #00a6ff ;
+        background: #00a6ff;
         color: white;
         border: 0;
         width: 25px;
@@ -23,9 +23,11 @@ import { HelpDialogComponent } from '../help-dialog/help-dialog.component';
   ],
 })
 export class HelpButtonComponent {
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {
+    //TODO remove this when complete
+    this.onHelpClick();
+  }
   onHelpClick() {
-    console.log('on help clicked');
     this.dialog.open(HelpDialogComponent, { width: '100%', height: '80%' });
   }
 }
