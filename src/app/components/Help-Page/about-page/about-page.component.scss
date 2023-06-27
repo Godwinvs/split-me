@@ -11,23 +11,6 @@
       font-size: 50px;
       font-weight: bold;
       font-family: monospace;
-      animation-name: ani;
-      background: linear-gradient(
-        to right,
-        #c230c5 10%,
-        #6ba5e2 50%,
-        black 60%
-      );
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: ani 3s linear infinite;
-      display: inline-block;
     }
   }
 
@@ -51,10 +34,5 @@
       width: 310px;
       font-family: sans-serif;
     }
-  }
-}
-@keyframes ani {
-  to {
-    background-position: 200%;
   }
 }
